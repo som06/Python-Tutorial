@@ -11,9 +11,6 @@ def main():
     months =[]
     os.chdir(r'C:\Som\Personal Projects\weatherdata')
     for f in os.listdir():
-        #fname = str(f.split('_'))
-        #print(fname[2])
-        #months.append(f)
         if f.__contains__(sys.argv[1]):
             months.append(f)
     #print(len(months))
