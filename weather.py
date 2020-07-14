@@ -85,8 +85,7 @@ def monthcalc(m):
             with open (f'C:\\Som\\Personal Projects\\weatherdata\\{f}','r') as data_file:
 
                 csv_data = csv.reader(data_file, delimiter=',')
-                csv_data.__next__()
-                csv_data.__next__()
+                next(csv_data)
                 for line in csv_data:
                     if line[0].__contains__('<!'):
                         break
