@@ -4,6 +4,7 @@ import csv
 from datetime import datetime
 
 
+months =[]
 def main():
     mx_tmp = 0
     mx_hum = 0
