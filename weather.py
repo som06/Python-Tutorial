@@ -4,7 +4,7 @@ import csv
 from datetime import datetime
 from pathlib import Path
 
-data_folder = Path("C:/Som/Personal Projects/weatherdata/")
+data_folder = os.path.dirname(os.path.abspath(__file__))
 
 def main():
     if str.upper(sys.argv[1]) == 'YEAR':
