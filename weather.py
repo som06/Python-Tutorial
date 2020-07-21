@@ -63,9 +63,10 @@ def month_calculator(month):
     sum_low_tmp = 0
     sum_mean_hum = 0
     count = 0
-    str_month = ''.join(month)
-    dt = datetime.strptime(str_month, "%Y%m")
-    c_dt = str(dt.strftime("%Y_%b"))
+    
+    dt = datetime.strptime(str(month), "['%Y', '%m']")
+    c_dt = dt.strftime("%Y_%b")
+
     with os.scandir(DATA_FOLDER) as data_files:
         for file in data_files:
             if c_dt in file.name:
