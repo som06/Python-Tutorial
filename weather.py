@@ -4,7 +4,7 @@ import csv
 from datetime import datetime
 from pathlib import Path
 
-data_folder = os.path.dirname(os.path.abspath(__file__))
+DATA_FOLDER = os.path.dirname(os.path.abspath(__file__))
 
 def main():
     if str.upper(sys.argv[1]) == 'YEAR':
